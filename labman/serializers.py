@@ -6,7 +6,7 @@ from .models import *
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
-        fields = ['username', 'is_staff', 'is_superuser']
+        fields = ['username', 'is_staff', 'is_superuser', 'is_approved']
 
 
 class NoticeSerializer(serializers.ModelSerializer):
